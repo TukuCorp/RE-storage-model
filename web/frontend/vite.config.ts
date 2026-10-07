@@ -25,6 +25,21 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: () => "/",
       },
+      "/api/run-report": {
+        target: "http://localhost:8085",
+        changeOrigin: true,
+        rewrite: () => "/",
+      },
+      "/api/export-workbook": {
+        target: "http://localhost:8086",
+        changeOrigin: true,
+        rewrite: () => "/",
+      },
+      "/api/compare-tariff-modes": {
+        target: "http://localhost:8087",
+        changeOrigin: true,
+        rewrite: () => "/",
+      },
     },
   },
 });
